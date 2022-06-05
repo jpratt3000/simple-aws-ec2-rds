@@ -1,0 +1,31 @@
+# This is done manually
+
+.DS_Store
+.vscode/*
+
+# But descend into directories
+!*/
+
+# Allow these dirs and sub dirs/files recursively
+!/.github/**
+
+
+# Allow these files
+!.gitignore
+!README.md
+!setup.cfg
+!setup.py
+
+# Ignore these file types in sub dirs
+# terraform files
+**/*.tfstate
+**/*.tfplan
+**/terraform.tfvars
+**/*.state
+**/*.plan
+**/*.hcl
+
+**/.terraform
+**/crash.*
+
+!**/terragrunt.hcl
